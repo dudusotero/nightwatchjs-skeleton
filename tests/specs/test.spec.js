@@ -14,9 +14,7 @@ module.exports = {
     },
 
     '[CT Teste] - 001 - Apenas um teste': function (browser) {
-        nightwatchHelper.waitForElementVisibleSetValue('input.gsfi', 'Nightwatch JS');
-        nightwatchHelper.waitForElementVisibleClick('div.jsb input[type="submit"]');
-        nightwatchHelper.waitForElementVisibleClick('#search h3 a');
+        nightwatchHelper.end();
     }
 
 };

@@ -22,7 +22,7 @@ module.exports = {
     },
     "test_settings": {
         "default": {
-            "launch_url": "https://www.google.com.br/",
+            "launch_url": "http://nightwatchjs.org/",
             "screenshots": {
                 "enabled": false,
                 "path": SCREENSHOT_PATH
