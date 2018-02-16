@@ -13,7 +13,7 @@ module.exports = {
         nightwatchHelper.end();
     },
 
-    '[CT Teste] - 001 - Apenas um teste': function (browser) {
+    '[CT Teste] - 001 - Only to see if this works': function (browser) {
         nightwatchHelper.end();
     }
 
