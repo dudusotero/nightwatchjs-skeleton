@@ -5,8 +5,8 @@ module.exports = {
 
     before: function (browser) {
         nightwatchHelper.setBrowser(browser);
-        nightwatchHelper.url(browser.launch_url);
         nightwatchHelper.windowMaximize();
+        nightwatchHelper.url(browser.launch_url);
     },
 
     after: function (browser) {
@@ -14,7 +14,7 @@ module.exports = {
     },
 
     '[Test] - 001 - Only to see if this works': function (browser) {
-        nightwatchHelper.end();
+        nightwatchHelper.expectElementTextToEqual('#index-container .jumbotron span', 'Nightwatch.js');
     }
 
 };

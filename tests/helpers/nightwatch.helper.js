@@ -25,6 +25,14 @@ var nightwatchHelper = {
         if (useXpath) { browser.useCss() }
     },
 
+    expectElementToBePresent: function (selector) {
+        browser.expect.element(selector).to.be.present;
+    },
+
+    expectElementTextToEqual: function (selector, text) {
+        browser.expect.element(selector).text.to.equal(text);
+    },
+
     windowMaximize: function () {
         browser.windowMaximize();
     },
