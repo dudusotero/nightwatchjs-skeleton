@@ -1,0 +1,15 @@
+{
+  "name": "nightwatchjs-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "postinstall": "node ./tests/nightwatch.conf.js",
+    "test": "./node_modules/.bin/nightwatch --config ./tests/nightwatch.conf.js --reporter ./tests/html-reporter.js"
+  },
+  "author": "Eduardo Sotero",
+  "dependencies": {
+    "nightwatch": "^0.9.19",
+    "nightwatch-html-reporter": "^2.0.5",
+    "selenium-download": "^2.0.11"
+  }
+}
